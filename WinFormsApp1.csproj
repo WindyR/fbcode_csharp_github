@@ -43,10 +43,4 @@
     <Folder Include="testimg\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Include="MyPythonModule.pyd">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>

@@ -215,8 +215,10 @@ public class DebugRunner
     
     public static ItemForModel GetMockData1(int count)
     {
-        var dataDir = "D:\\02_Data\\2025\\fbcode_c#\\testC#\\WinFormsApp1\\WinFormsApp1\\testimg\\";
-        var saveDir = "D:\\02_Data\\2025\\fbcode_c#\\testC#\\WinFormsApp1\\WinFormsApp1\\out\\";
+        string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+        // 向上导航到项目根目录
+        string projectRoot = Path.GetFullPath(Path.Combine(baseDir, @"..\..\.."));
+        string dataDir = Path.Combine(projectRoot, "testimg");
         var datFiles = Directory.GetFiles(dataDir, "*.dat").OrderBy(f => f).ToArray();
         var xmlFiles = Directory.GetFiles(dataDir, "*.xml").OrderBy(f => f).ToArray();
         var items = new List<ItemForModel>();
@@ -249,8 +251,10 @@ public class DebugRunner
     
     public static ItemForModel GetMockData2(int count)
     {
-        var dataDir = "D:\\02_Data\\2025\\fbcode_c#\\testC#\\WinFormsApp1\\WinFormsApp1\\testimg0416\\";
-        var saveDir = "D:\\02_Data\\2025\\fbcode_c#\\testC#\\WinFormsApp1\\WinFormsApp1\\out\\";
+        string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+        // 向上导航到项目根目录
+        string projectRoot = Path.GetFullPath(Path.Combine(baseDir, @"..\..\.."));
+        string dataDir = Path.Combine(projectRoot, "testimg0416");
         var datFiles = Directory.GetFiles(dataDir, "*.dat").OrderBy(f => f).ToArray();
         var xmlFiles = Directory.GetFiles(dataDir, "*.xml").OrderBy(f => f).ToArray();
         var items = new List<ItemForModel>();

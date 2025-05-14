@@ -89,7 +89,10 @@ public class PydModuleMangerAsync
             var yOffset = itemForModel.yOffset;
             var zScale = itemForModel.zScale;
             var zOffset = itemForModel.zOffset;
-            var deltaSaveDir = @"D:/02_Data/2025/fbcode_c#/testC#/WinFormsApp1/WinFormsApp1/out";
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+            // 向上导航到项目根目录
+            string projectRoot = Path.GetFullPath(Path.Combine(baseDir, @"..\..\.."));
+            string deltaSaveDir = Path.Combine(projectRoot, "out");
             var gpuNum = 0;
             var inputDict = new Dictionary<string, object>
             {

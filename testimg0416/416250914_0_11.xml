@@ -1,0 +1,56 @@
+<icon_data_format name="" valuetype="">
+  <parameter name="size">7700</parameter>
+  <parameter name="version">1</parameter>
+  <parameter name="layout">SUBCOMPONENT</parameter>
+  <component name="Ranger3Range" valuetype="Hi3D">
+    <parameter name="size">7700</parameter>
+    <parameter name="height">1</parameter>
+    <worldrangetraits>
+      <parameter name="lower bound x">-37.834644</parameter>
+      <parameter name="lower bound r">-13.797883</parameter>
+      <parameter name="upper bound x">140.054596</parameter>
+      <parameter name="upper bound r">85.207419</parameter>
+      <parameter name="coordinate unit"></parameter>
+    </worldrangetraits>
+    <genistreamtraits>
+      <parameter name="region id">scan 3d extraction 1</parameter>
+      <parameter name="extraction method">hi 3d</parameter>
+      <parameter name="output mode">rectified c</parameter>
+      <parameter name="width">2560</parameter>
+      <parameter name="height">532</parameter>
+      <parameter name="offset X">0</parameter>
+      <parameter name="offset Y">280</parameter>
+      <parameter name="a axis range scale">0.069515</parameter>
+      <parameter name="a axis range offset">-37.834600</parameter>
+      <parameter name="a axis range min">0</parameter>
+      <parameter name="a axis range max">2559</parameter>
+      <parameter name="a axis range missing">false</parameter>
+      <parameter name="a axis range missing value">0</parameter>
+      <parameter name="b axis range scale">0.200000</parameter>
+      <parameter name="b axis range offset">0.000000</parameter>
+      <parameter name="b axis range min">-inf</parameter>
+      <parameter name="b axis range max">inf</parameter>
+      <parameter name="b axis range missing">false</parameter>
+      <parameter name="b axis range missing value">0</parameter>
+      <parameter name="c axis range scale">0.001511</parameter>
+      <parameter name="c axis range offset">-13.797900</parameter>
+      <parameter name="c axis range min">1</parameter>
+      <parameter name="c axis range max">65535</parameter>
+      <parameter name="c axis range missing">true</parameter>
+      <parameter name="c axis range missing value">0</parameter>
+      <parameter name="unit">millimeter</parameter>
+    </genistreamtraits>
+    <subcomponent name="Range" valuetype="WORD">
+      <parameter name="size">5120</parameter>
+      <parameter name="width">2560</parameter>
+    </subcomponent>
+    <subcomponent name="Intensity" valuetype="BYTE">
+      <parameter name="size">2560</parameter>
+      <parameter name="width">2560</parameter>
+    </subcomponent>
+    <subcomponent name="Mark" valuetype="INT">
+      <parameter name="size">20</parameter>
+      <parameter name="width">5</parameter>
+    </subcomponent>
+  </component>
+</icon_data_format>
